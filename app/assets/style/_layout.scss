@@ -17,15 +17,14 @@
         }
 
         a{
-            text-decoration: none;
             font-family: $noto-sans;
             font-size: $fz-5;
             line-height: 1.5;
-            color: white;
+            color: $dark-bg-font-color;
         }
 
         a:hover{
-            color: black;
+            color: $hover-font-color;
         }
     }
 

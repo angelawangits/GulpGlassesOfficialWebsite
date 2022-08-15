@@ -2,7 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap');
 
 $color: blue;
-$primary-color: #AA0601;
+//background color
+$primary-bg-color: #AA0601;
+$secondary-bg-color: #FBF2F2;
+
+//font-color
+$primary-font-color: #650300;
+$secondary-font-color: #AA0601;
+$dark-bg-font-color: white;
+$hover-font-color: black;
 
 //font-family
 $noto-sans: 'Noto Sans TC', sans-serif;
