@@ -55,8 +55,11 @@ img {
           box-sizing: border-box; }
 
 .container {
-  width: 1296px;
+  width: 67.5%;
   margin: 0 auto; }
+  @media (max-width: 992px) {
+    .container {
+      width: 720px; } }
   @media (max-width: 767px) {
     .container {
       width: 100%; } }
