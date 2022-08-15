@@ -1,4 +1,30 @@
 .header {
-    height: 200px;
-    background-color: #00cc99;
-  }
+    background-color: $primary-color;
+
+    .logo{
+        width: 80px;
+    }
+    ul{
+        gap: 64px;
+        padding: 25px 0;
+
+        a{
+            text-decoration: none;
+            font-family: $noto-sans;
+            font-size: 20px;
+            line-height: 1.5;
+            color: white;
+        }
+
+        a:hover{
+            color: black;
+        }
+    }
+
+    @include mobile{
+        ul{
+            gap:0px;
+        }
+    } 
+
+}

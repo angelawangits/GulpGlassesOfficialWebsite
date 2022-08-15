@@ -1,0 +1,20 @@
+.container{
+    width: 1296px;
+    margin: 0 auto;
+
+    @include mobile{
+        width: 100%;
+    }
+}
+
+.flex{
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.align-item-center{
+    align-items: center;
+}
