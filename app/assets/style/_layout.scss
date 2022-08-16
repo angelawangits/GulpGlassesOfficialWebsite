@@ -1,5 +1,9 @@
 .header {
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    
     .logo{
         width: 80px;
         height: 72px;
@@ -21,11 +25,12 @@
             font-size: $fz-5;
             line-height: 1.5;
             color: $dark-bg-font-color;
+
         }
 
         a:hover{
             color: $hover-font-color;
-        }
+        } 
     }
 
     @include mobile{
@@ -47,10 +52,86 @@
             }
         }
     } 
-
 }
 
-.footer {
-    height: 200px;
-    background-color: #00cc99;
-  }
+.footer-contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 48px;
+    border-bottom: 1px solid $dark-bg-font-color;
+    
+    .links{
+        display: flex;
+        gap: 48px;
+
+        a{
+            font-family: $noto-sans;
+            font-size: $fz-4;
+            line-height: 1.5;
+            color: $dark-bg-font-color;
+        }
+
+        a:hover{
+            color: $hover-font-color;
+        }
+    }
+
+    .social-media{
+        display: flex;
+        gap: 32px;
+        
+        img{
+            width: 48px;
+        }
+    }
+
+    .contact-way{
+        width: 100%;
+        font-size: $fz-9;
+        line-height: 1.5;
+        font-family: $noto-sans;
+        margin: 24px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        span{
+           margin-right: 16px;
+        }
+
+        a{
+            color: $dark-bg-font-color;
+        }
+        
+    }
+
+    @include mobile{
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        padding-top: 24px;
+
+        .links{
+            display: none;
+        }
+
+        .social-media{
+            gap: 8px;
+
+            img{
+                width: 24px;
+            }
+        }
+
+        .contact-way{
+            width: initial;
+            font-size: $fz-4;
+            margin-top: 0;
+
+            span{
+                margin-right: 8px;
+            }
+        }
+    }
+}
