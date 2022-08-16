@@ -54,6 +54,9 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+a {
+  text-decoration: none; }
+
 .container {
   width: 67.5%;
   margin: 0 auto; }
@@ -62,7 +65,9 @@ img {
       width: 720px; } }
   @media (max-width: 767px) {
     .container {
-      width: 100%; } }
+      width: 100%;
+      padding-left: 13px;
+      padding-right: 14px; } }
 
 .bg-primary {
   background-color: #AA0601; }
@@ -86,48 +91,170 @@ img {
       -ms-flex-align: center;
           align-items: center; }
 
-.header .logo {
-  width: 80px;
-  height: 72px;
-  margin: 4px 0;
-  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain; }
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px; }
+  .header .logo {
+    width: 80px;
+    height: 72px;
+    margin: 4px 0;
+    background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .header ul {
+    gap: 64px; }
+    .header ul li {
+      padding: 25px 0; }
+    .header ul a {
+      font-family: "Noto Sans TC", sans-serif;
+      font-size: 20px;
+      line-height: 1.5;
+      color: white; }
+    .header ul a:hover {
+      color: black; }
+  @media (max-width: 767px) {
+    .header {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .header ul {
+        gap: 0px;
+        width: 100%;
+        text-align: center; }
+        .header ul li {
+          width: 50%;
+          padding: 12px 0;
+          border: 1px solid white; }
+        .header ul a {
+          font-size: 16px; } }
 
-.header ul {
-  gap: 64px; }
-  .header ul li {
-    padding: 25px 0; }
-  .header ul a {
-    text-decoration: none;
-    font-family: "Noto Sans TC", sans-serif;
-    font-size: 20px;
+.footer-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 48px;
+  border-bottom: 1px solid white; }
+  .footer-contact .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 48px; }
+    .footer-contact .links a {
+      font-family: "Noto Sans TC", sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: white; }
+    .footer-contact .links a:hover {
+      color: black; }
+  .footer-contact .social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 32px; }
+    .footer-contact .social-media img {
+      width: 48px; }
+  .footer-contact .contact-way {
+    width: 100%;
+    font-size: 36px;
     line-height: 1.5;
-    color: white; }
-  .header ul a:hover {
-    color: black; }
-
-@media (max-width: 767px) {
-  .header {
+    font-family: "Noto Sans TC", sans-serif;
+    margin: 24px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
-    .header ul {
-      gap: 0px;
-      width: 100%;
-      text-align: center; }
-      .header ul li {
-        width: 50%;
-        padding: 12px 0;
-        border: 1px solid white; }
-      .header ul a {
-        font-size: 16px; } }
+            flex-direction: column;
+    gap: 8px; }
+    .footer-contact .contact-way span {
+      margin-right: 16px; }
+    .footer-contact .contact-way a {
+      color: white; }
+    .footer-contact .contact-way a:hover {
+      color: black; }
+  @media (max-width: 767px) {
+    .footer-contact {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      padding-top: 24px; }
+      .footer-contact .links {
+        display: none; }
+      .footer-contact .social-media {
+        gap: 8px; }
+        .footer-contact .social-media img {
+          width: 24px; }
+      .footer-contact .contact-way {
+        width: initial;
+        font-size: 16px;
+        margin-top: 0; }
+        .footer-contact .contact-way span {
+          margin-right: 8px; } }
 
-.footer {
-  height: 200px;
-  background-color: #00cc99; }
+.footer-policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  padding: 32px 0; }
+  .footer-policy .copyright {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif; }
+  .footer-policy .tnc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 48px;
+    font-size: 14px;
+    line-height: 1.5; }
+    .footer-policy .tnc a {
+      color: white;
+      font-family: "Noto Sans TC", sans-serif; }
+    .footer-policy .tnc a:hover {
+      color: black; }
+  @media (max-width: 767px) {
+    .footer-policy {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      gap: 8px;
+      padding-top: 16px;
+      padding-bottom: 24px; }
+      .footer-policy .tnc {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 8px;
+        font-size: 16px; } }
 
 .box {
   width: 100px;
