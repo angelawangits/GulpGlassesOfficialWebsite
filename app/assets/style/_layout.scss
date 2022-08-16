@@ -26,11 +26,10 @@
             line-height: 1.5;
             color: $dark-bg-font-color;
 
+            &:hover{
+                color: $hover-font-color;
+            }
         }
-
-        a:hover{
-            color: $hover-font-color;
-        } 
     }
 
     @include mobile{
@@ -71,10 +70,10 @@
             font-size: $fz-4;
             line-height: 1.5;
             color: $dark-bg-font-color;
-        }
 
-        a:hover{
-            color: $hover-font-color;
+            &:hover{
+                color: $hover-font-color;
+            }
         }
     }
 
@@ -103,12 +102,11 @@
 
         a{
             color: $dark-bg-font-color;
-        }
 
-        a:hover{
-            color: $hover-font-color;
-        }
-        
+            &:hover{
+                color: $hover-font-color;
+            }
+        } 
     }
 
     @include mobile{
@@ -161,10 +159,10 @@
         a{
             color: $dark-bg-font-color;
             font-family: $noto-sans;
-        }
 
-        a:hover{
-            color: $hover-font-color;
+            &:hover{
+                color: $hover-font-color;
+            }
         }
     }
 
