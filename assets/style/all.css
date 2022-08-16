@@ -67,6 +67,16 @@ h1 {
     h1 {
       font-size: 24px; } }
 
+h2 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.5;
+  color: #650300; }
+  @media (max-width: 767px) {
+    h2 {
+      font-size: 24px; } }
+
 .container {
   width: 67.5%;
   margin: 0 auto; }
@@ -78,6 +88,16 @@ h1 {
       width: 100%;
       padding-left: 13px;
       padding-right: 14px; } }
+
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  .section h2 {
+    text-align: center; }
+  @media (max-width: 767px) {
+    .section {
+      padding-top: 40px;
+      padding-bottom: 40px; } }
 
 .bg-primary {
   background-color: #AA0601; }
@@ -276,9 +296,7 @@ h1 {
     text-align: right; }
   .banner h2 {
     font-size: 36px;
-    line-height: 1.5;
-    color: #650300;
-    font-family: "Noto Sans TC", sans-serif; }
+    font-weight: normal; }
   .banner .purchase {
     margin-top: 4px;
     display: inline-block;
@@ -304,5 +322,50 @@ h1 {
         font-size: 16px; }
       .banner .purchase {
         margin-top: 8px; } }
+
+.feature h2 {
+  margin-bottom: 24px; }
+
+.feature .value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .feature .value li {
+    width: 306px; }
+  @media (max-width: 992px) {
+    .feature .value {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .feature .value li {
+        width: 336px; } }
+  @media (max-width: 767px) {
+    .feature .value {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .feature .value li {
+        width: 100%; } }
+
+.feature img {
+  max-width: 100px;
+  margin-bottom: 16px; }
+
+.feature h3 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #650300;
+  margin-bottom: 8px; }
+
+.feature p {
+  text-align: left;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 16px;
+  line-height: 1.5; }
 
 /*# sourceMappingURL=all.css.map */
