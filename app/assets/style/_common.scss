@@ -2,6 +2,18 @@ a{
     text-decoration: none;
 }
 
+h1{
+    font-weight: 700;
+    font-family: $noto-sans;
+    color: $primary-font-color; 
+    font-size: $fz-16;
+    line-height: 1.5;
+
+    @include mobile{
+        font-size: $fz-6;
+    }
+}
+
 .container{
     width: 67.5%;
     

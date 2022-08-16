@@ -1,11 +1,55 @@
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
+.banner{
+  background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png');
+  background-size: cover;
+  background-position: center;
+
+  .slogan{
+    padding-top: 296px;
+    padding-bottom: 296px;
+    text-align: right;
+  }
+
+  h2{
+    font-size: $fz-9;
+    line-height: 1.5;
+    color: $primary-font-color;
+    font-family: $noto-sans;
+  }
+
+  .purchase{
+    margin-top: 4px;
+    display: inline-block;
+    color: $dark-bg-font-color;
+    font-size: $fz-5;
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: $noto-sans;
+    background-color: $primary-bg-color;
+    padding: 6px 12px;
+  
+    &:hover{
+      color: $hover-font-color;
+    }
+  }
+
+  @include tablet{
+    background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png');
+  }
+
+  @include mobile{
+    background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png');
+
+    .slogan{
+      padding-top: 144px;
+      padding-bottom: 144px;
+    }
+
+    h2{
+      font-size: $fz-4;
+    }
+
+    .purchase{
+      margin-top: 8px;
+    }
   }
 }
