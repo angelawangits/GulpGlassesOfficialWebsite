@@ -11,9 +11,7 @@
 
   h2{
     font-size: $fz-9;
-    line-height: 1.5;
-    color: $primary-font-color;
-    font-family: $noto-sans;
+    font-weight: normal;
   }
 
   .purchase{
@@ -51,5 +49,59 @@
     .purchase{
       margin-top: 8px;
     }
+  }
+}
+
+.feature{
+  h2{
+    margin-bottom: 24px;
+  }
+
+  .value{
+    display: flex;
+    gap: 24px;
+    text-align: center;
+    justify-content: center;
+
+    li{
+      width: 306px;
+    }
+
+    @include tablet{
+      flex-wrap: wrap;
+
+      li{
+        width: 336px;
+      }
+    }
+
+    @include mobile{
+      flex-wrap: wrap;
+
+      li{
+        width: 100%;
+      }
+    }
+  }
+
+  img{
+    max-width: 100px;
+    margin-bottom: 16px;
+  }
+
+  h3{
+    font-family: $noto-sans;
+    font-size: $fz-6;
+    line-height: 1.5;
+    font-weight: 700;
+    color: $primary-font-color;
+    margin-bottom: 8px;
+  }
+  
+  p{
+    text-align: left;
+    font-family: $noto-sans;
+    font-size: $fz-4;
+    line-height: 1.5;
   }
 }
