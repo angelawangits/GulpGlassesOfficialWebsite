@@ -154,3 +154,63 @@
     }
   }
 }
+
+.joint{
+  background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  h2{
+    color: $dark-bg-font-color;
+    margin-bottom: 48px;
+  }
+
+  .products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 24px;
+
+    li{
+      width: calc((100% - 24px) / 2);
+    }
+
+    img{
+      display: block;
+    }
+
+    h3{
+      background-color: $secondary-font-bg-color;
+      padding: 8px 0;
+    }
+  }
+
+  @include tablet{
+    background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg-md.png');
+
+    .products{
+      li{
+        width: 100%;
+      }
+    }
+  }
+
+  @include mobile{
+    background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg-sm.png');
+
+    .products{
+      li{
+        width: 100%;
+      }
+
+      .double{
+        content: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section4-1-sm.png');
+      }
+
+      .youth{
+        content: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section4-2-sm.png');
+      }
+    }
+  }
+}
