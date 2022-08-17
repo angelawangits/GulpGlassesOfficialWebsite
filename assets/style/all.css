@@ -420,4 +420,44 @@ h3 {
     .classical .products li {
       width: 100%; } }
 
+.joint {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .joint h2 {
+    color: white;
+    margin-bottom: 48px; }
+  .joint .products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 24px; }
+    .joint .products li {
+      width: calc((100% - 24px) / 2); }
+    .joint .products img {
+      display: block; }
+    .joint .products h3 {
+      background-color: white;
+      padding: 8px 0; }
+  @media (max-width: 992px) {
+    .joint {
+      background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg-md.png"); }
+      .joint .products li {
+        width: 100%; } }
+  @media (max-width: 767px) {
+    .joint {
+      background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg-sm.png"); }
+      .joint .products li {
+        width: 100%; }
+      .joint .products .double {
+        content: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section4-1-sm.png"); }
+      .joint .products .youth {
+        content: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section4-2-sm.png"); } }
+
 /*# sourceMappingURL=all.css.map */
