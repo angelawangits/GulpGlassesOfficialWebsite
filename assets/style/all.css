@@ -47,7 +47,8 @@ table {
 /* rwd img css，可當作是 CSS Reset 其中一個 */
 img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  vertical-align: bottom; }
 
 /* 全域 border box */
 *, *::before, *::after {
@@ -88,14 +89,28 @@ h3 {
 
 .container {
   max-width: 1320px;
+  margin: 0 auto;
   padding-left: 12px;
-  padding-right: 12px;
-  margin: 0 auto; }
+  padding-right: 12px; }
   @media (max-width: 992px) {
     .container {
       max-width: 720px; } }
   @media (max-width: 767px) {
     .container {
+      width: 100%;
+      padding-left: 13px;
+      padding-right: 14px; } }
+
+.container-sm {
+  max-width: 660px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px; }
+  @media (max-width: 992px) {
+    .container-sm {
+      max-width: 600px; } }
+  @media (max-width: 767px) {
+    .container-sm {
       width: 100%;
       padding-left: 13px;
       padding-right: 14px; } }
@@ -324,15 +339,13 @@ h3 {
     .banner {
       background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png"); } }
   @media (max-width: 767px) {
-    .banner {
-      background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png"); }
-      .banner .slogan {
-        padding-top: 144px;
-        padding-bottom: 144px; }
-      .banner h2 {
-        font-size: 16px; }
-      .banner .purchase {
-        margin-top: 8px; } }
+    .banner .slogan {
+      padding-top: 144px;
+      padding-bottom: 144px; }
+    .banner h2 {
+      font-size: 16px; }
+    .banner .purchase {
+      margin-top: 8px; } }
 
 .feature {
   background-color: #FBF2F2; }
@@ -356,11 +369,8 @@ h3 {
         .feature .value li {
           width: calc((100% - 24px) / 2); } }
     @media (max-width: 767px) {
-      .feature .value {
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-        .feature .value li {
-          width: 100%; } }
+      .feature .value li {
+        width: 100%; } }
   .feature img {
     max-width: 100px;
     margin-bottom: 16px; }
@@ -410,15 +420,8 @@ h3 {
 @media (max-width: 767px) {
   .classical h2 {
     margin-bottom: 24px; }
-  .classical .products {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    .classical .products li {
-      width: 100%; } }
+  .classical .products li {
+    width: 100%; } }
 
 .joint {
   background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png");
@@ -453,11 +456,124 @@ h3 {
   @media (max-width: 767px) {
     .joint {
       background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg-sm.png"); }
-      .joint .products li {
-        width: 100%; }
+      .joint h2 {
+        margin-bottom: 24px; }
       .joint .products .double {
         content: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section4-1-sm.png"); }
       .joint .products .youth {
         content: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section4-2-sm.png"); } }
+
+.recommend h2 {
+  margin-bottom: 48px; }
+
+.recommend h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: "Noto Sans TC", sans-serif;
+  margin-bottom: 8px; }
+
+.recommend .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 24px; }
+  .recommend .cards li {
+    width: calc((100% - 24px) / 4);
+    -webkit-box-shadow: 0px 2px 6px #00000029;
+            box-shadow: 0px 2px 6px #00000029; }
+
+.recommend .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: calc(511px * 0.4);
+  padding: 16px; }
+  .recommend .card-body .content p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Noto Sans TC", sans-serif; }
+  .recommend .card-body .date p {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "Noto Sans TC", sans-serif;
+    color: #707070; }
+
+@media (max-width: 992px) {
+  .recommend .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .recommend .cards li {
+      width: calc((100% - 24px) / 2); } }
+
+@media (max-width: 767px) {
+  .recommend h2 {
+    margin-bottom: 24px; }
+  .recommend .cards {
+    gap: 16px; }
+    .recommend .cards li {
+      width: 100%; } }
+
+.contact-us {
+  background-color: #FBF2F2; }
+  .contact-us h2 {
+    margin-bottom: 48px; }
+  .contact-us p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: "Noto Sans TC", sans-serif;
+    margin-bottom: 24px; }
+  .contact-us input, .contact-us label, .contact-us textarea {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Noto Sans TC", sans-serif; }
+  .contact-us input[type='text'], .contact-us input[type='tel'], .contact-us input[type='email'], .contact-us label, .contact-us textarea {
+    display: block;
+    width: 100%;
+    background-color: #FBF2F2; }
+  .contact-us label {
+    margin-bottom: 8px; }
+  .contact-us input[type='text'], .contact-us input[type='tel'], .contact-us input[type='email'], .contact-us textarea {
+    padding: 6px 12px;
+    margin-bottom: 16px; }
+  .contact-us .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 40px; }
+  .contact-us button {
+    width: calc((100% - 24px) / 6 * 4);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
+    background-color: #AA0601;
+    color: white;
+    border: none;
+    padding: 16px 0; }
+  @media (max-width: 992px) {
+    .contact-us h2 {
+      margin-bottom: 24px; }
+    .contact-us p {
+      font-size: 16px; }
+    .contact-us button {
+      width: calc((100% - 24px) / 10 * 6); } }
+  @media (max-width: 767px) {
+    .contact-us .btn {
+      margin-top: 16px; }
+    .contact-us button {
+      width: 100%; } }
 
 /*# sourceMappingURL=all.css.map */
