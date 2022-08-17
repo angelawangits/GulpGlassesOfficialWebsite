@@ -35,7 +35,6 @@
   }
 
   @include mobile{
-    background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png');
 
     .slogan{
       padding-top: 144px;
@@ -78,8 +77,6 @@
     }
 
     @include mobile{
-      flex-wrap: wrap;
-
       li{
         width: 100%;
       }
@@ -145,9 +142,6 @@
     }
 
     .products{
-      flex-wrap: wrap;
-      flex-direction: column;
-
       li{
         width: 100%;
       }
@@ -198,11 +192,12 @@
 
   @include mobile{
     background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg-sm.png');
+    
+    h2{
+      margin-bottom: 24px;
+    }
 
     .products{
-      li{
-        width: 100%;
-      }
 
       .double{
         content: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section4-1-sm.png');
@@ -210,6 +205,80 @@
 
       .youth{
         content: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section4-2-sm.png');
+      }
+    }
+  }
+}
+
+.recommend{
+  h2{
+    margin-bottom: 48px;
+  }
+
+  h4{
+    font-size: $fz-4;
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: $noto-sans;
+    margin-bottom: 8px;
+  }
+
+  .cards{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+    li{
+      width: calc((100% - 24px) / 4);
+      box-shadow: 0px 2px 6px #00000029;
+    }
+  }
+
+  .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(511px * 0.4);
+    padding: 16px;
+    
+    .content{
+      p{
+        font-size: $fz-4;
+        line-height: 1.5;
+        font-family: $noto-sans;
+      }
+    }
+    
+    .date{
+      p{
+        font-size: $fz-3_5;
+        line-height: 1.5;
+        font-family: $noto-sans;
+        color: $date-font-color;
+      }
+    }
+  }
+
+  @include tablet{
+    .cards{
+      flex-wrap: wrap;
+
+      li{
+        width: calc((100% - 24px) / 2);
+      }
+    }
+  }
+
+  @include mobile{
+    h2{
+      margin-bottom: 24px;
+    }
+
+    .cards{
+      gap: 16px;
+
+      li{
+        width: 100%;
       }
     }
   }
