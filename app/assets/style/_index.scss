@@ -283,3 +283,81 @@
     }
   }
 }
+
+.contact-us{
+  background-color: $secondary-bg-color;
+
+  h2{
+    margin-bottom: 48px;
+  }
+
+  p{
+    font-size: $fz-5;
+    line-height: 1.5;
+    font-family: $noto-sans;
+    margin-bottom: 24px;
+  }
+
+  input, label, textarea{
+    font-size: $fz-4;
+    line-height: 1.5;
+    font-family: $noto-sans;
+  }
+
+  input[type='text'], input[type='tel'], input[type='email'], label, textarea{
+    display: block;
+    width: 100%;
+    background-color: $secondary-bg-color;
+  }
+
+  label{
+    margin-bottom: 8px;
+  }
+  
+  input[type='text'], input[type='tel'], input[type='email'], textarea{
+    padding: 6px 12px;
+    margin-bottom: 16px;
+  }
+
+  .btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  button{
+    width: calc((100% - 24px) / 6 * 4);
+    font-size: $fz-4;
+    line-height: 1.5;
+    font-weight: 700;
+    background-color: $primary-bg-color;
+    color: $dark-bg-font-color;
+    border: none;
+    padding: 16px 0;
+  }
+
+
+  @include tablet{
+    h2{
+      margin-bottom: 24px;
+    }
+
+    p{
+      font-size: $fz-4;
+    }
+
+    button{
+      width: calc((100% - 24px) / 10 * 6);
+    }
+  }
+
+  @include mobile{
+    .btn{
+      margin-top: 16px;
+    }
+
+    button{
+      width: 100%;
+    }
+  }
+}
