@@ -125,6 +125,14 @@ h3 {
       padding-top: 40px;
       padding-bottom: 40px; } }
 
+.branch-section {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  @media (max-width: 767px) {
+    .branch-section {
+      padding-top: 40px;
+      padding-bottom: 64px; } }
+
 .bg-primary {
   background-color: #AA0601; }
 
@@ -562,7 +570,8 @@ h3 {
     background-color: #AA0601;
     color: white;
     border: none;
-    padding: 16px 0; }
+    padding: 16px 0;
+    cursor: pointer; }
   @media (max-width: 992px) {
     .contact-us h2 {
       margin-bottom: 24px; }
@@ -575,5 +584,97 @@ h3 {
       margin-top: 16px; }
     .contact-us button {
       width: 100%; } }
+
+.branch h2 {
+  color: black;
+  padding-left: 16px;
+  border-left: 8px solid #AA0601;
+  margin-bottom: 32px; }
+
+.branch .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px; }
+  .branch .location label {
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: "Noto Sans TC", sans-serif;
+    margin-right: 16px; }
+  .branch .location select {
+    color: #495057;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 6px 12px;
+    width: 23.5%; }
+
+.branch .stores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 24px; }
+  .branch .stores li {
+    width: 31%; }
+  .branch .stores h3 {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #212529;
+    font-style: normal;
+    -moz-text-align-last: left;
+         text-align-last: left;
+    padding: 8px 24px;
+    border: 1px solid #00000020; }
+  .branch .stores .store-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 8px;
+    padding: 16px 24px;
+    border: 1px solid #00000020; }
+    .branch .stores .store-info p {
+      font-size: 20px;
+      line-height: 1.5;
+      font-family: "Noto Sans TC", sans-serif;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 8px; }
+  .branch .stores a {
+    display: block;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 16px 0;
+    font-size: 19px;
+    line-height: 27px;
+    font-family: "Noto Sans TC", sans-serif; }
+
+@media (max-width: 992px) {
+  .branch .location select {
+    width: 43.7%; }
+  .branch .stores li {
+    width: 48%; } }
+
+@media (max-width: 767px) {
+  .branch h2 {
+    margin-bottom: 24px; }
+  .branch .location label {
+    font-size: 16px;
+    margin-right: 8px; }
+  .branch .location select {
+    width: 79.3%; }
+  .branch .stores li {
+    width: 100%; } }
 
 /*# sourceMappingURL=all.css.map */
