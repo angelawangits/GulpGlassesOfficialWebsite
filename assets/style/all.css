@@ -77,12 +77,23 @@ h2 {
     h2 {
       font-size: 24px; } }
 
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 1.5;
+  font-style: italic;
+  color: #AA0601;
+  text-align: center; }
+
 .container {
-  width: 67.5%;
+  max-width: 1320px;
+  padding-left: 12px;
+  padding-right: 12px;
   margin: 0 auto; }
   @media (max-width: 992px) {
     .container {
-      width: 720px; } }
+      max-width: 720px; } }
   @media (max-width: 767px) {
     .container {
       width: 100%;
@@ -337,13 +348,13 @@ h2 {
         -ms-flex-pack: center;
             justify-content: center; }
     .feature .value li {
-      width: 306px; }
+      width: calc((100% - 24px) / 4); }
     @media (max-width: 992px) {
       .feature .value {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
         .feature .value li {
-          width: 336px; } }
+          width: calc((100% - 24px) / 2); } }
     @media (max-width: 767px) {
       .feature .value {
         -ms-flex-wrap: wrap;
@@ -356,14 +367,57 @@ h2 {
   .feature h3 {
     font-family: "Noto Sans TC", sans-serif;
     font-size: 24px;
-    line-height: 1.5;
     font-weight: 700;
     color: #650300;
-    margin-bottom: 8px; }
+    margin-bottom: 8px;
+    font-style: normal; }
   .feature p {
     text-align: left;
     font-family: "Noto Sans TC", sans-serif;
     font-size: 16px;
     line-height: 1.5; }
+
+.classical h2 {
+  margin-bottom: 48px; }
+
+.classical .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px; }
+  .classical .products li {
+    width: calc((100% - 24px) / 3); }
+  .classical .products img {
+    margin-bottom: 8px; }
+
+@media (max-width: 992px) {
+  .classical .products {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .classical .products li {
+      width: calc((100% - 24px) / 2); } }
+
+@media (max-width: 767px) {
+  .classical h2 {
+    margin-bottom: 24px; }
+  .classical .products {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .classical .products li {
+      width: 100%; } }
 
 /*# sourceMappingURL=all.css.map */
