@@ -1,0 +1,115 @@
+.branch{
+    h2{
+        color: $page-title-font-color;
+        padding-left: 16px;
+        border-left: 8px solid $primary-bg-color;
+        margin-bottom: 32px;
+    }
+
+    .location{
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+
+        label{
+            font-size: $fz-6;
+            line-height: 1.5;
+            font-family: $noto-sans;
+            margin-right: 16px;
+        }
+
+        select{
+            color: #495057;
+            font-size: $fz-4_5;
+            line-height: 26px;
+            padding: 6px 12px;
+            width: 23.5%;
+        }
+    }
+
+    .stores{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+
+        li{
+            width: 31%;
+        }
+
+        h3{
+            font-family: $noto-sans;
+            font-weight: normal;
+            font-size: $fz-6;
+            line-height: 1.5;
+            color: #212529;
+            font-style: normal;
+            text-align-last: left;
+            padding: 8px 24px;
+            border: 1px solid #00000020;
+        }
+
+        .store-info{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 16px 24px;
+            border: 1px solid #00000020;
+
+            p{
+                font-size: $fz-5;
+                line-height: 1.5;
+                font-family: $noto-sans;
+                display: flex;
+                gap: 8px;
+            }
+        }
+
+        a{
+            display: block;
+            text-align: center;
+            background-color: $detail-bg-color;
+            color: $dark-bg-font-color;
+            padding: 16px 0;
+            font-size: 19px;
+            line-height: 27px;
+            font-family: $noto-sans;
+        }
+    }
+
+    @include tablet{
+        .location{
+            select{
+                width: 43.7%;
+            }
+        }
+
+        .stores{
+            li{
+                width: 48%;
+            }
+        }
+    }
+
+    @include mobile{
+        h2{
+            margin-bottom: 24px;
+        }
+
+        .location{
+            label{
+                font-size: $fz-4;
+                margin-right: 8px;
+            }
+
+            select{
+                width: 79.3%;
+            }
+        }
+
+        .stores{
+            li{
+                width: 100%;
+            }
+        }
+    }
+}
